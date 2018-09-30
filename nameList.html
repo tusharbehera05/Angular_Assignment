@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Angular DropDown Assignment</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="dropdownStyle.css" />
+        <h1>
+            <center>
+                <font color="#51b2e8" size = 85>Employee List
+                </font>
+            </center>
+        </h1>
+    </head>    
+    <body ng-app="myAssignment">
+        <style>
+            body {
+                margin-top: 50px;
+                margin-left: 100px;
+            }
+        </style>
+        <div class="container" ng-controller="myCtl">
+            <label><b>Employee Details</b></label>
+            <div custom-select="g for g in nameList1 | filter: $searchTerm" custom-select-options="nameList1" ng-model="nameList"></div>
+        </div>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css" rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+        <script src="dropdownController.js"></script>
+    </body>
+</html>
+
